@@ -79,16 +79,6 @@ body.theme3{
 --White: hsl(0, 0%, 100%);
 }
 
-
-/* 
-#### Text
-
-- Light yellow: hsl(52, 100%, 62%)
-- Very dark blue: hsl(198, 20%, 13%)
-- White (text): hsl(0, 0%, 100%);
-   */
-
-
 .container{
     width: 30dvw;
 }
@@ -155,6 +145,8 @@ input[type="checkbox"].indeterminate::before {
     padding: 20px;
     color: var(--White);
     font-size: 38px;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .buttons{
@@ -171,12 +163,14 @@ input[type="checkbox"].indeterminate::before {
 }
 
 .key{
+    user-select: none;
     width: 22%;
     height: 2em;
     border-radius: 5px;
     margin-bottom: 0.7em;
     font-size: 25px;
     border: none;
+    outline: none;
     cursor: pointer;
     background-color: var(--Light-grayish-orange-key-background);
     color: var(--Very-dark-grayish-blue);

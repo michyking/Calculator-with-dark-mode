@@ -30,35 +30,35 @@
           </div>
         </div>
       </div>
-      <div class="display" id="display">6768</div>
+      <div class="display" id="display"></div>
       <div class="buttons">
         <div class="keys">
-          <button class="key">7</button>
-          <button class="key">8</button>
-          <button class="key">9</button>
-          <button class="key same-color">DEL</button>
+          <button class="key"   onclick="showNumber('7')">7</button>
+          <button class="key" onclick="showNumber('8')">8</button>
+          <button class="key" onclick="showNumber('9')">9</button>
+          <button class="key same-color" onclick="deleteLast()">DEL</button>
         </div>
         <div class="keys">
-          <button class="key">4</button>
-          <button class="key">5</button>
-          <button class="key">6</button>
-          <button class="key">+</button>
+          <button class="key" onclick="showNumber('4')">4</button>
+          <button class="key" onclick="showNumber('5')">5</button>
+          <button class="key" onclick="showNumber('6')">6</button>
+          <button class="key" onclick="showOperator('+')">+</button>
         </div>
         <div class="keys">
-          <button class="key">1</button>
-          <button class="key">2</button>
-          <button class="key">3</button>
-          <button class="key">-</button>
+          <button class="key" onclick="showNumber('1')">1</button>
+          <button class="key" onclick="showNumber('2')">2</button>
+          <button class="key" onclick="showNumber('3')">3</button>
+          <button class="key" onclick="showOperator('-')">-</button>
         </div>
         <div class="keys">
-          <button class="key">.</button>
-          <button class="key">0</button>
-          <button class="key">/</button>
-          <button class="key">x</button>
+          <button class="key" onclick="showDecimal()">.</button>
+          <button class="key" onclick="showNumber('0')">0</button>
+          <button class="key" onclick="showOperator('/')">/</button>
+          <button class="key" onclick="showOperator('*')">x</button>
         </div>
         <div class="keys">
-          <button class="key bottom-key same-color">RESET</button>
-          <button class="key bottom-key equal">=</button>
+          <button class="key bottom-key same-color" onclick="resetCalculator()">RESET</button>
+          <button class="key bottom-key equal" onclick="calculateResult()">=</button>
         </div>
       </div>
     </div>
