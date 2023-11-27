@@ -60,12 +60,20 @@ const showOperator = (operator) =>{
 
 //    for the decimal
 
-const showDecimal =() =>{
-    if (!displayValue.includes('.')) {
+// const showDecimal =() =>{
+//     if (!displayValue.includes('.')) {
+//       displayValue += '.';
+//       updateDisplay();
+//     }
+//   }
+
+  const showDecimal = () => {
+    // If the last character is not a decimal point, or if the display is empty
+    if (!displayValue.endsWith('.') || !displayValue.includes('.')) {
       displayValue += '.';
       updateDisplay();
     }
-  }
+  };
 
 //   for the del button 
 
