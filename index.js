@@ -23,10 +23,6 @@ const toggleCheckboxState = () => {
 
 let displayValue = '';
 
-// const updateDisplay =() =>{
-//   document.getElementById('display').textContent = displayValue;
-// }
-
 const updateDisplay = () => {
     const displayElement = document.getElementById('display');
     const formattedValue = formatNumberWithCommas(displayValue);
@@ -91,16 +87,6 @@ const resetCalculator = () =>{
 
 //   the evaluation
 
-// const calculateResult=() =>{
-//     try {
-//       displayValue = eval(displayValue).toString();
-//       updateDisplay();
-//     } catch (error) {
-//       displayValue = 'ERROR';
-//       updateDisplay();
-//     }
-//   }
-
 const calculateResult = () => {
     try {
       const result = new Function('return ' + displayValue)();
@@ -111,4 +97,6 @@ const calculateResult = () => {
       updateDisplay();
     }
   };
+
+
   
