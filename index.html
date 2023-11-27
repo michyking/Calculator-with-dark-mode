@@ -1,22 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <p>CALC</p>
+        <div class="mode-changer">
+          <p>THEME</p>
+          <div>
+            <input
+              type="checkbox"
+              id="mode"
+              class="unchecked"
+              onclick="toggleCheckboxState()"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="display" id="display">6768</div>
+      <div class="buttons">
+        <div class="keys">
+          <button class="key">7</button>
+          <button class="key">8</button>
+          <button class="key">9</button>
+          <button class="key same-color">DEL</button>
+        </div>
+        <div class="keys">
+          <button class="key">4</button>
+          <button class="key">5</button>
+          <button class="key">6</button>
+          <button class="key">+</button>
+        </div>
+        <div class="keys">
+          <button class="key">1</button>
+          <button class="key">2</button>
+          <button class="key">3</button>
+          <button class="key">-</button>
+        </div>
+        <div class="keys">
+          <button class="key">.</button>
+          <button class="key">0</button>
+          <button class="key">/</button>
+          <button class="key">x</button>
+        </div>
+        <div class="keys">
+          <button class="key bottom-key same-color">RESET</button>
+          <button class="key bottom-key equal">=</button>
+        </div>
+      </div>
+    </div>
 
-
-</head>
-<body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="index.js"></script>
+  </body>
 </html>
